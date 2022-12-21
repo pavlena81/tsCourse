@@ -29,3 +29,35 @@ console.log(name);
 toggle = true;
 empty = null;
 notInitialize = undefined;
+//cl2
+let anything: any;
+anything = -20
+anything = 'Text';
+anything = {};
+
+let some:unknown;
+some = 'Text';
+
+let str: string;
+
+if (typeof some === 'string') {
+   str = some;
+}
+
+let person: [string, number];
+
+person = ['Max', 21];
+
+enum Status { LOADING, READY };
+
+const page = {
+   load: Status.LOADING,
+}
+
+if (page.load === Status.LOADING) {
+  console.log('page is loading');
+}
+
+if (page.load === Status.READY) {
+  console.log('page is loaded');
+}
