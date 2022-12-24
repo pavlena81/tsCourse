@@ -61,3 +61,21 @@ if (page.load === Status.LOADING) {
 if (page.load === Status.READY) {
   console.log('page is loaded');
 }
+//////
+let union: string | number;
+
+let literal: 'enable' | 'disable';
+
+
+function showMessage(message:string):void {
+  console.log(message);
+}
+
+
+function calc(num1: number, num2: number):number {
+  return num1 + num2;
+}
+
+function customError(): never {
+  throw new Error('Error');
+}
